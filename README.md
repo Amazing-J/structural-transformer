@@ -66,13 +66,13 @@ We split the **-train_structure** file in the above feature-based method into se
 After the corresponding corpus is prepared, modify the PATH within "preprocess.sh". You should pay attention to the field "data_dir", which a directory of pre-processed data that will be used during training. We usually use the experiment setting, such as "./workspace/data". Finally, execute the corresponding script file, such as ```bash preprocess.sh```. 
 Data preprocessing is completed.
 
-## Training
+## Training ##
 First, modify the PATH within "train.sh". "data_prefix" is the preprocessing directory we mentioned above. Note the prefix gq. For example "./workspace/data/gq". Finally, execute the corresponding script file, such as ```bash train.sh```.
 
 ##Decoding##
 All you need to do is change the PATH in the "translate.sh" accordingly, and then execute ```bash translate.sh```.
 
-##Cite
+##Cite##
 If you like our paper, please cite
 ```
 @inproceedings{zhu2019structural-transformer,
