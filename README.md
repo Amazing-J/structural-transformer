@@ -56,11 +56,13 @@ Besides, we also obtain a matrix which records the graph structure between every
 The above structure-aware self-attention is capable of incorporating graph structure between concept pairs. We use a sequence of edge labels, along the path from $$x_i$$ to $$x_j$$ to indicate the AMR graph structure between concepts $$x_i$$ and $$x_j$$. In order to distinguish the edge direction, we add a direction symbol to each label with $$\uparrow$$ for climbing up along the path, and $$\downarrow$$ for going down. Specifically, for the special case of $$i==j$$, we use ***None*** as the path. 
 
 **Feature-based Method**
+
 A natural way to represent the structural path is to view it as a string feature. To this end, we combine the labels in the structural path into a string. The model used is [./opennmt-feature](https://github.com/Amazing-J/structural-transformer/tree/master/opennmt-feature).
 The parameter **-train_structure** represents the structural relationship in the AMR graph. We give the corresponding corpus sample [corpus_sample/all_path_corpus](https://github.com/Amazing-J/structural-transformer/blob/master/corpus_sample/all_path_corpus/train_edge_all_bpe). 
 Each line in the corpus represents the structural relationship between all nodes in an AMR graph. Assuming $$n$$ concept nodes are input( **-train_src** ), there will be $${(n+1)}^2$$ tokens in this line, each token representing a path relationship ( There's also an **EOS** token at the end of the input sequence, so it is $${(n+1)}^2$$. 
 
 **Avg\Sum\CNN\SA-based Method**
+
 To overcome the data sparsity in the above feature-based method, we view the structural path as a label sequence. We give the corresponding corpus sample [corpus_sample/five_path_corpus](https://github.com/Amazing-J/structural-transformer/tree/master/corpus_sample/five_path_corpus) .
 We split the **-train_structure** file in the above feature-based method into several corpus, which are **-train_edge_all_bpe_1**,** train_edge_all_bpe_2 **, and so on. For example, **-train_edge_all_bpe_1** only contains the first token of each structure path, **-train_edge_all_bpe_2** only contains the second token of each structure path, and so on. (In our experiment, it is optimal to set the length to 4, which means that we only use the first four corpus.)
 
@@ -68,12 +70,15 @@ After the corresponding corpus is prepared, modify the PATH within "preprocess.s
 Data preprocessing is completed.
 
 ## Training 
+
 First, modify the PATH within "train.sh". "data_prefix" is the preprocessing directory we mentioned above. Note the prefix gq. For example "./workspace/data/gq". Finally, execute the corresponding script file, such as ```bash train.sh```.
 
 ## Decoding 
+
 All you need to do is change the PATH in the "translate.sh" accordingly, and then execute ```bash translate.sh```.
 
 ## Cite 
+
 If you like our paper, please cite
 ```
 @inproceedings{zhu2019structural-transformer,
