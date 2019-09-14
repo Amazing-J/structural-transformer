@@ -64,7 +64,7 @@ Each line in the corpus represents the structural relationship between all nodes
 **Avg\Sum\CNN\SA-based Method**
 
 To overcome the data sparsity in the above feature-based method, we view the structural path as a label sequence. We give the corresponding corpus sample [corpus_sample/five_path_corpus](https://github.com/Amazing-J/structural-transformer/tree/master/corpus_sample/five_path_corpus) .
-We split the **-train_structure** file in the above feature-based method into several corpus, which are **-train_edge_all_bpe_1**,** train_edge_all_bpe_2 **, and so on. For example, **-train_edge_all_bpe_1** only contains the first token of each structure path, **-train_edge_all_bpe_2** only contains the second token of each structure path, and so on. (In our experiment, it is optimal to set the length to 4, which means that we only use the first four corpus.)
+We split the **-train_structure** file in the above feature-based method into several corpus, which are **-train_edge_all_bpe_1**, **- train_edge_all_bpe_2 **, and so on. For example, **-train_edge_all_bpe_1** only contains the first token of each structure path, **-train_edge_all_bpe_2** only contains the second token of each structure path, and so on. (In our experiment, it is optimal to set the length to 4, which means that we only use the first four corpus.)
 
 After the corresponding corpus is prepared, modify the PATH within "preprocess.sh". You should pay attention to the field "data_dir", which a directory of pre-processed data that will be used during training. We usually use the experiment setting, such as "./workspace/data". Finally, execute the corresponding script file, such as ```bash preprocess.sh```. 
 Data preprocessing is completed.
