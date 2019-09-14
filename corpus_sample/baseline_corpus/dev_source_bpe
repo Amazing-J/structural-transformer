@@ -1,0 +1,10 @@
+﻿@@ date-entity :month 5 :day 14 :year 2008
+and :op1 ( country :wiki estonia :name ( name :op1 estonia ) ) :op2 ( country :wiki latvia :name ( name :op1 latvia ) ) :op3 ( country :wiki lithuania :name ( name :op1 lithuania ) ) :op4 ( country :wiki germany :name ( name :op1 germany ) ) :op5 ( country :wiki italy :name ( name :op1 italy ) ) :op6 ( country :wiki spain :name ( name :op1 spain ) ) :op7 ( country :wiki slovakia :name ( name :op1 slovakia ) ) :op8 ( country :wiki united_states :name ( name :op1 united :op2 states ) )
+and :op1 international :op2 ( government-organization :arg0-of govern ) :op3 telecommunication :op4 technology :op5 science
+consider :arg0 ( military :wiki nato :name ( name :op1 nato ) ) :arg1 ( attack :mod cyber ) :arg2 ( thing :arg1-of ( threaten :arg2 ( and :op1 ( network :mod military ) :op2 ( network :mod civilian ) :mod computer ) ) ) :time ( after :op1 ( strike :arg1 ( government-organization :arg0-of ( govern :arg1 ( country :wiki estonia :name ( name :op1 estonia ) ) ) ) :arg2 ( attack :mod cyber ) :time ( date-entity :year 2007 ) ) )
+sign :arg0 ( person :arg0-of ally :mod ( military :wiki nato :name ( name :op1 nato ) ) ) :arg1 ( agree :arg0 person :arg1 ( fund :arg0 person :arg1 ( center :mod research ) :purpose ( bol@@ ster :arg0 person :arg1 ( defend :arg3 ( attack :medium cyber ) ) ) ) )
+sign :arg0 ( person :quant 7 :arg0-of ally :mod ( military :wiki nato :name ( name :op1 nato ) ) ) :arg1 ( agree :arg1 ( fund :arg0 person :arg1 ( center :mod research ) ) ) :time ( date-entity :month 5 :day 14 :year 2008 )
+bol@@ ster :arg0 center :arg1 ( defend :arg0 ( military :wiki nato :name ( name :op1 nato ) ) :arg1 military :arg3 ( attack :medium cyber ) )
+operate :arg0 center :time ( date-entity :month 8 :year 2008 )
+open :arg1 center :time ( date-entity :year 2009 ) :manner formal
+conduct :arg0 ( person :quant 30 :arg0-of ( have-org-role :arg2 staff :arg3 specialize ) ) :arg1 ( and :op1 ( research :arg0 person :arg1 ( warfare :mod cyber ) ) :op2 ( train :arg0 person :arg1 warfare ) )
