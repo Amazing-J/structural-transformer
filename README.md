@@ -41,7 +41,7 @@ Of course, after the transformation is complete, you still need to do [Byte Pair
 
 $$ e_{ij} = \frac{\left(x_iW^Q\right)\left(x_jW^K + r_{ij}W^{R}\right)^{T}}{\sqrt{d_z}} $$
 
-Note that the relation $$r_{ij}$$ is **the vector representation** for element pair ($$x_i$$, $$x_j$$).
+Note that the relation $r_{ij}$ is **the vector representation** for element pair ($$x_i$$, $$x_j$$).
 
 We also use the depth-first traversal strategy to linearize AMR graphs to obtain simplified AMRs which only consist of concepts. As show below, the input sequence is much shorter than the input sequence in the baseline.
 	**-train_src** For example: [corpus_sample/.../train_concept_no_EOS_bpe](https://github.com/Amazing-J/structural-transformer/blob/master/corpus_sample/five_path_corpus/train_concept_no_EOS_bpe)
