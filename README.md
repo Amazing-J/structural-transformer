@@ -40,7 +40,7 @@ Of course, after the transformation is complete, you still need to do [Byte Pair
 
 **Structure-Aware Self-Attention:**
 
-$$ e_{ij} = \frac{\left(x_iW^Q\right)\left(x_jW^K + r_{ij}W^{R}\right)^{T}}{\sqrt{d_z}} $$
+$$e_{ij} = \frac{\left(x_iW^Q\right)\left(x_jW^K + r_{ij}W^{R}\right)^{T}}{\sqrt{d_z}}$$
 
 Note that the relation $$r_{ij}$$ is **the vector representation** for element pair ($$x_i$$, $$x_j$$).
 
