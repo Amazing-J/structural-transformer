@@ -1,6 +1,6 @@
 # Structural Transformer Model
 
-This repository contains the code for our paper ["Modeling Graph Structure in Transformer for Better AMR-to-Text Generation"](https://arxiv.org/abs/1909.00136) in EMNLP-IJCNLP 2019
+This repository contains the code for our paper ["Modeling Graph Structure in Transformer for Better AMR-to-Text Generation"](https://arxiv.org/abs/1909.00136) in EMNLP-IJCNLP-2019
 
 The code is developed under Pytorch 1.0 Due to the compitibility reason of Pytorch, it may not be loaded by some lower version (such as 0.4.0).
 
