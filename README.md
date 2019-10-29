@@ -85,7 +85,7 @@ If you like our paper, please cite
   title={Modeling Graph Structure in Transformer for Better AMR-to-Text Generation},
   author={Zhu, Jie and Li, Junhui and Zhu, Muhua and Qian, Longhua and Zhang, Min and Zhou, Guodong},
   booktitle={Proceedings of the EMNLP-IJCNLP 2019},
-  pages={},
+  pages={5460-5469},
   year={2019}
 }
 ```
