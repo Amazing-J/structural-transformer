@@ -84,8 +84,8 @@ If you like our paper, please cite
 @inproceedings{zhu2019structural-transformer,
   title={Modeling Graph Structure in Transformer for Better AMR-to-Text Generation},
   author={Jie Zhu, Junhui Li, Muhua Zhu, Longhua Qian, Min Zhang and Guodong Zhou},
-  booktitle={Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
-  pages={5462-5471},
+  booktitle={Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP-2019)},
+  pages={5458-5467},
   year={2019}
 }
 ```
